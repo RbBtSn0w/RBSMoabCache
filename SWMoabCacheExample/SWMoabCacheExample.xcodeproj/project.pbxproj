@@ -16,6 +16,7 @@
 		B16C2C6D1EA225B800C5AB62 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B16C2C6B1EA225B800C5AB62 /* LaunchScreen.storyboard */; };
 		B16C2C781EA225B800C5AB62 /* SWMoabCacheExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B16C2C771EA225B800C5AB62 /* SWMoabCacheExampleTests.m */; };
 		B16C2C831EA225B800C5AB62 /* SWMoabCacheExampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B16C2C821EA225B800C5AB62 /* SWMoabCacheExampleUITests.m */; };
+		B16C2C921EA225CF00C5AB62 /* SWMoabCache.m in Sources */ = {isa = PBXBuildFile; fileRef = B16C2C911EA225CF00C5AB62 /* SWMoabCache.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		B16C2C7E1EA225B800C5AB62 /* SWMoabCacheExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SWMoabCacheExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B16C2C821EA225B800C5AB62 /* SWMoabCacheExampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SWMoabCacheExampleUITests.m; sourceTree = "<group>"; };
 		B16C2C841EA225B800C5AB62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B16C2C901EA225CF00C5AB62 /* SWMoabCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWMoabCache.h; path = ../../SWMoabCache/SWMoabCache.h; sourceTree = "<group>"; };
+		B16C2C911EA225CF00C5AB62 /* SWMoabCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWMoabCache.m; path = ../../SWMoabCache/SWMoabCache.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +106,8 @@
 		B16C2C591EA225B800C5AB62 /* SWMoabCacheExample */ = {
 			isa = PBXGroup;
 			children = (
+				B16C2C901EA225CF00C5AB62 /* SWMoabCache.h */,
+				B16C2C911EA225CF00C5AB62 /* SWMoabCache.m */,
 				B16C2C5D1EA225B800C5AB62 /* AppDelegate.h */,
 				B16C2C5E1EA225B800C5AB62 /* AppDelegate.m */,
 				B16C2C601EA225B800C5AB62 /* ViewController.h */,
@@ -279,6 +284,7 @@
 				B16C2C681EA225B800C5AB62 /* SWMoabCacheExample.xcdatamodeld in Sources */,
 				B16C2C621EA225B800C5AB62 /* ViewController.m in Sources */,
 				B16C2C5F1EA225B800C5AB62 /* AppDelegate.m in Sources */,
+				B16C2C921EA225CF00C5AB62 /* SWMoabCache.m in Sources */,
 				B16C2C5C1EA225B800C5AB62 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -431,6 +437,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SWMoabCacheExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rbbtsn0w.SWMoabCacheExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -442,6 +449,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SWMoabCacheExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rbbtsn0w.SWMoabCacheExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
