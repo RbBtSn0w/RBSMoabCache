@@ -1,7 +1,7 @@
 //
-//  MoabCache.h
+//  SWMoabCache.h
 //
-// Copyright (c) <2014-2016> Rbbtsn0w
+// Copyright (c) <2014-2017> Rbbtsn0w
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -26,92 +26,90 @@
 NS_ASSUME_NONNULL_BEGIN
 
 typedef enum {
-    MoabCacheErrorDirectoryIsFile = 1001
-} MoabCacheError;
+    SWMoabCacheErrorDirectoryIsFile = 1001
+} SWMoabCacheError;
 
-extern NSString * MoabCacheErrorDomain;
+extern NSString * SWMoabCacheErrorDomain;
 
-@interface MoabCache : NSObject
+@interface SWMoabCache : NSObject
 
-/*!
- 
+/**
+ The maximum "total cost" of the in-memory image cache. The cost function is the number of pixels held in memory.
+ */
+@property (assign, nonatomic) NSUInteger maxMemoryCost;
+
+/**
+ The maximum number of objects the cache should hold.
+ */
+@property (assign, nonatomic) NSUInteger maxMemoryCountLimit;
+
+
+#pragma mark    -   Methods
+
+/**
  Designated initializer. You can custom the file document path.
- 
- @param name      Used to name internal NSCache instance and to name a folder which is used to store cached values persistently.
- @param error     Will be assigned if something went wrong during initializing.
+
+ @param name Used to name internal NSCache instance and to name a folder which is used to store cached values persistently.
+ @param error Will be assigned if something went wrong during initializing.
  @param directory Will create document by NSSearchPathDirectory.
- 
- @return An instance of MoabCache
- 
+ @return An instance of SWMoabCache
  */
 - (nullable instancetype)initWithName:(NSString *)name error:(NSError *__autoreleasing *)error searchPathDirectory:(NSSearchPathDirectory) directory;
 
 /**
- *
- *  Designated initializer. Default document by NSCachesDirectory.
- *
- *  @param name  Used to name internal NSCache instance and to name a folder which is used to store cached values persistently.
- *  @param error Will be assigned if something went wrong during initializing.
- *
- *  @return An instance of MoabCache
+ Designated initializer. Default document by NSCachesDirectory.
+
+ @param name Used to name internal NSCache instance and to name a folder which is used to store cached values persistently.
+ @param error Will be assigned if something went wrong during initializing.
+ @return An instance of MoabCache
  */
 - (nullable instancetype)initWithName:(NSString *)name error:(NSError *__autoreleasing *)error;
 
 /**
- *
- *  Instance's name.
- *
- *  @return cache name
+ Instance's name.
+
+ @return cache name
  */
 - (NSString *)name;
 
 /**
- *
- *  Caches the object.
- *
- *  @param object Object which is to be cached. It should conform to NSCoding protocol. Passing nil will delete corresponding object.
- *  @param key    the key which should be used for the object above.
+ Caches the object.
+
+ @param object Object which is to be cached. It should conform to NSCoding protocol. Passing nil will delete corresponding object.
+ @param key the key which should be used for the object above.
  */
 - (void)setObject:(id<NSCoding>)object forKey:(NSString *)key;
 
 /**
- *
- *  Indicates whether object exists for the key or not.
- *
- *  @param key The key of the object.
- *
- *  @return Boolean indicating if an object is stored in the cache.
+ Indicates whether object exists for the key or not.
+
+ @param key The key of the object.
+ @return Boolean indicating if an object is stored in the cache.
  */
 - (BOOL)objectExistsForKey:(NSString *)key;
 
-
 /**
- *
- *  Returns an object for the corresponding key.
- *
- *  @param key The key of the object.
- *
- *  @return An object or nil if the object is not in the cache
+ Returns an object for the corresponding key.
+
+ @param key The key of the object.
+ @return An object or nil if the object is not in the cache
  */
 - (nullable id)objectForKey:(NSString *)key;
 
 /**
- *
- *  Removes an object from the cache.
- *
- *  @param key Object's key
+ Removes an object from the cache.
+
+ @param key Object's key
  */
 - (void)removeObjectForKey:(NSString *)key;
 
 /**
- *
- *  Removes all objects from the cache and persistent store.
+ Removes all objects from the cache and persistent store.
  */
 - (void)removeAllObjects;
 
 /**
- *
- *  Removes all objects from in-memory cache.
+ Removes all objects from in-memory cache.
  */
 - (void)clearMemory;
 
@@ -119,38 +117,33 @@ extern NSString * MoabCacheErrorDomain;
 - (void)setObject:(id)obj forKeyedSubscript:(NSString *)key;
 - (nullable id)objectForKeyedSubscript:(NSString *)key;
 
+
 /**
- *
- *  Returnes object's file path.
- *
- *  @param key The key of the object.
- *
- *  @return Path if object exists, nil otherwise.
- *  @exception MoabCacheKeyIsNilException will be raised if the key provided is nil.
+ Returnes object's file path.
+
+ @param key The key of the object.
+ @return If object exists, nil otherwise.
+ @exception MoabCacheKeyIsNilException will be raised if the key provided is nil.
  */
 - (nullable NSString *)pathForObjectForKey:(NSString *)key;
 
 
 /**
- *
- *  Removes all objects from names, Only by NSCachesDirectory document.
+ Removes all objects from names, Only by NSCachesDirectory document.
  */
 + (void)removeAllNameCache;
 
-
 /**
- *
- *  Removes all objects from names, Only by NSCachesDirectory document.
- *
- *  @param directory    Removes by NSSearchPathDirectory document.
+ Removes all objects from names, Only by NSCachesDirectory document.
+
+ @param directory Removes by NSSearchPathDirectory document.
  */
 + (void)removeAllNameCacheBySearchPathDirectory:(NSSearchPathDirectory) directory;
 
 /**
- *
- *  Statistics cache folder size
- *
- *  @return size is long long
+ Statistics cache folder size
+
+ @return size is long long
  */
 + (long long)statisticsCacheFolderSize;
 
