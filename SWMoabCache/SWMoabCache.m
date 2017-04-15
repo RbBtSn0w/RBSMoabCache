@@ -156,8 +156,8 @@ NSString* AllNameKeysBySearchPathDirectory(NSSearchPathDirectory directory);
     
     __autoreleasing NSError *error = nil;
     if (self) {
-        NSString *channelCacheQueue = [NSString stringWithFormat:@"%@_%@",kCacheQueueName, name];
-        self.queue = dispatch_queue_create([channelCacheQueue UTF8String], DISPATCH_QUEUE_CONCURRENT);
+        NSString *queueName = [NSString stringWithFormat:@"%@_%@-%@",kCacheQueueName, name, [[NSUUID UUID] UUIDString]];
+        self.queue = dispatch_queue_create([queueName UTF8String], DISPATCH_QUEUE_CONCURRENT);
         self.fileManager = [[NSFileManager alloc] init];
         self.cache = [[NSCache alloc] init];
         
