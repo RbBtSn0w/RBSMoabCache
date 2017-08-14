@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B16C2C561EA225B800C5AB62"
-               BuildableName = "SWMoabCacheExample.app"
-               BlueprintName = "SWMoabCacheExample"
-               ReferencedContainer = "container:SWMoabCacheExample.xcodeproj">
+               BuildableName = "RBSMoabCacheExample.app"
+               BlueprintName = "RBSMoabCacheExample"
+               ReferencedContainer = "container:RBSMoabCacheExample.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B16C2C721EA225B800C5AB62"
-               BuildableName = "SWMoabCacheExampleTests.xctest"
-               BlueprintName = "SWMoabCacheExampleTests"
-               ReferencedContainer = "container:SWMoabCacheExample.xcodeproj">
+               BuildableName = "RBSMoabCacheExampleTests.xctest"
+               BlueprintName = "RBSMoabCacheExampleTests"
+               ReferencedContainer = "container:RBSMoabCacheExample.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B16C2C7D1EA225B800C5AB62"
-               BuildableName = "SWMoabCacheExampleUITests.xctest"
-               BlueprintName = "SWMoabCacheExampleUITests"
-               ReferencedContainer = "container:SWMoabCacheExample.xcodeproj">
+               BuildableName = "RBSMoabCacheExampleUITests.xctest"
+               BlueprintName = "RBSMoabCacheExampleUITests"
+               ReferencedContainer = "container:RBSMoabCacheExample.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -53,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B16C2C561EA225B800C5AB62"
-            BuildableName = "SWMoabCacheExample.app"
-            BlueprintName = "SWMoabCacheExample"
-            ReferencedContainer = "container:SWMoabCacheExample.xcodeproj">
+            BuildableName = "RBSMoabCacheExample.app"
+            BlueprintName = "RBSMoabCacheExample"
+            ReferencedContainer = "container:RBSMoabCacheExample.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B16C2C561EA225B800C5AB62"
-            BuildableName = "SWMoabCacheExample.app"
-            BlueprintName = "SWMoabCacheExample"
-            ReferencedContainer = "container:SWMoabCacheExample.xcodeproj">
+            BuildableName = "RBSMoabCacheExample.app"
+            BlueprintName = "RBSMoabCacheExample"
+            ReferencedContainer = "container:RBSMoabCacheExample.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,9 +95,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B16C2C561EA225B800C5AB62"
-            BuildableName = "SWMoabCacheExample.app"
-            BlueprintName = "SWMoabCacheExample"
-            ReferencedContainer = "container:SWMoabCacheExample.xcodeproj">
+            BuildableName = "RBSMoabCacheExample.app"
+            BlueprintName = "RBSMoabCacheExample"
+            ReferencedContainer = "container:RBSMoabCacheExample.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

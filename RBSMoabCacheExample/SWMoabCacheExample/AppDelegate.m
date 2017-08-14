@@ -1,6 +1,6 @@
 //
 //  AppDelegate.m
-//  SWMoabCacheExample
+//  RBSMoabCacheExample
 //
 //  Created by Snow Wu on 4/15/17.
 //  Copyright © 2017 RbBtSn0w. All rights reserved.
@@ -58,7 +58,7 @@
     // The persistent container for the application. This implementation creates and returns a container, having loaded the store for the application to it.
     @synchronized (self) {
         if (_persistentContainer == nil) {
-            _persistentContainer = [[NSPersistentContainer alloc] initWithName:@"SWMoabCacheExample"];
+            _persistentContainer = [[NSPersistentContainer alloc] initWithName:@"RBSMoabCacheExample"];
             [_persistentContainer loadPersistentStoresWithCompletionHandler:^(NSPersistentStoreDescription *storeDescription, NSError *error) {
                 if (error != nil) {
                     // Replace this implementation with code to handle the error appropriately.

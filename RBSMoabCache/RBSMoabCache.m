@@ -1,7 +1,7 @@
 //
-//  SWMoabCache.m
+//  RBSMoabCache.m
 //
-// Copyright (c) <2014-2017> Rbbtsn0w
+// Copyright (c) <2014-2017> RbBtSn0w
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -21,7 +21,7 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-#import "SWMoabCache.h"
+#import "RBSMoabCache.h"
 #import <sys/xattr.h>
 #import <sys/stat.h>
 
@@ -41,11 +41,11 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-static NSString *const kSWMoabCacheErrorDomain = @"com.Rbbtsn0w.SWMoabCache.cache";
+static NSString *const kRBSMoabCacheErrorDomain = @"com.Rbbtsn0w.RBSMoabCache.cache";
 
-static NSString *const kCacheQueueName = @"com.Rbbtsn0w.SWMoabCache.cache";
+static NSString *const kCacheQueueName = @"com.Rbbtsn0w.RBSMoabCache.cache";
 
-static NSString *const kAllNameKeys = @"kSWMoabCacheNameKeys";
+static NSString *const kAllNameKeys = @"kRBSMoabCacheNameKeys";
 
 
 
@@ -55,7 +55,7 @@ static inline long long fileSizeAtPath(NSString *filePath);
 
 NSString* AllNameKeysBySearchPathDirectory(NSSearchPathDirectory directory);
 
-@interface SWMoabCache ()
+@interface RBSMoabCache ()
 
 @property (nonatomic, SW_PROPERTY_STRONG)       NSCache *cache;
 @property (nonatomic, SW_PROPERTY_STRONG)       NSFileManager *fileManager;
@@ -64,7 +64,7 @@ NSString* AllNameKeysBySearchPathDirectory(NSSearchPathDirectory directory);
 
 @end
 
-@implementation SWMoabCache
+@implementation RBSMoabCache
 
 
 #pragma mark    -   Accessors
@@ -173,7 +173,7 @@ NSString* AllNameKeysBySearchPathDirectory(NSSearchPathDirectory directory);
             [self.fileManager createDirectoryAtPath:self.cachesPath withIntermediateDirectories:YES attributes:nil error:&error];
         }
         else if (!isDirectory) {
-            error = [NSError errorWithDomain:kSWMoabCacheErrorDomain code:SWMoabCacheErrorDirectoryIsFile userInfo:@{}];
+            error = [NSError errorWithDomain:kRBSMoabCacheErrorDomain code:RBSMoabCacheErrorDirectoryIsFile userInfo:@{}];
         }
         
         if (error) {
@@ -347,13 +347,13 @@ NSString* AllNameKeysBySearchPathDirectory(NSSearchPathDirectory directory);
                     continue;
                 }
                 NSError *error = nil;
-                SWMoabCache *moabCache = [[SWMoabCache alloc] initWithName:channelID error:&error];
+                RBSMoabCache *moabCache = [[RBSMoabCache alloc] initWithName:channelID error:&error];
                 [moabCache removeAllObjectsBySync];
                 if (error) {
                     NSLog(@"%@",[NSString stringWithFormat:@"Remove channel %@ cache was failure",channelID]);
                 }
 #if !__has_feature(objc_arc)
-                [SWMoabCache release];
+                [RBSMoabCache release];
 #endif
             }
         }
@@ -381,13 +381,13 @@ NSString* AllNameKeysBySearchPathDirectory(NSSearchPathDirectory directory);
                     continue;
                 }
                 NSError *error = nil;
-                SWMoabCache *moabCache = [[SWMoabCache alloc] initWithName:channelID error:&error searchPathDirectory:directory];
+                RBSMoabCache *moabCache = [[RBSMoabCache alloc] initWithName:channelID error:&error searchPathDirectory:directory];
                 [moabCache removeAllObjectsBySync];
                 if (error) {
                     NSLog(@"%@",[NSString stringWithFormat:@"Remove channel %@ cache was failure",channelID]);
                 }
 #if !__has_feature(objc_arc)
-                [SWMoabCache release];
+                [RBSMoabCache release];
 #endif
             }
         }
@@ -413,7 +413,7 @@ NSString* AllNameKeysBySearchPathDirectory(NSSearchPathDirectory directory);
             
             for (NSString *channelID in allChannels) {
                 NSError *error = nil;
-                SWMoabCache *moabCache = [[SWMoabCache alloc] initWithName:channelID error:&error];
+                RBSMoabCache *moabCache = [[RBSMoabCache alloc] initWithName:channelID error:&error];
                 
                 NSString *cachePath = moabCache->_cachesPath;
                 
@@ -423,7 +423,7 @@ NSString* AllNameKeysBySearchPathDirectory(NSSearchPathDirectory directory);
                     NSLog(@"%@",[NSString stringWithFormat:@"Remove channel %@ cache was failure",channelID]);
                 }
 #if !__has_feature(objc_arc)
-                [SWMoabCache release];
+                [RBSMoabCache release];
 #endif
             }
         }

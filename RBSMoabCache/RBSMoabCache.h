@@ -1,7 +1,7 @@
 //
-//  SWMoabCache.h
+//  RBSMoabCache.h
 //
-// Copyright (c) <2014-2017> Rbbtsn0w
+// Copyright (c) <2014-2017> RbBtSn0w
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -26,12 +26,12 @@
 NS_ASSUME_NONNULL_BEGIN
 
 typedef enum {
-    SWMoabCacheErrorDirectoryIsFile = 1001
-} SWMoabCacheError;
+    RBSMoabCacheErrorDirectoryIsFile = 1001
+} RBSMoabCacheError;
 
-extern NSString * SWMoabCacheErrorDomain;
+extern NSString * RBSMoabCacheErrorDomain;
 
-@interface SWMoabCache : NSObject
+@interface RBSMoabCache : NSObject
 
 /**
  The maximum "total cost" of the in-memory image cache. The cost function is the number of pixels held in memory.
@@ -52,7 +52,7 @@ extern NSString * SWMoabCacheErrorDomain;
  @param name Used to name internal NSCache instance and to name a folder which is used to store cached values persistently.
  @param error Will be assigned if something went wrong during initializing.
  @param directory Will create document by NSSearchPathDirectory.
- @return An instance of SWMoabCache
+ @return An instance of RBSMoabCache
  */
 - (nullable instancetype)initWithName:(NSString *)name error:(NSError *__autoreleasing *)error searchPathDirectory:(NSSearchPathDirectory) directory;
 

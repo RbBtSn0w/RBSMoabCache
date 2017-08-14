@@ -1,6 +1,6 @@
 //
-//  SWMoabCacheExampleTests.m
-//  SWMoabCacheExampleTests
+//  RBSMoabCacheExampleTests.m
+//  RBSMoabCacheExampleTests
 //
 //  Created by Snow Wu on 4/15/17.
 //  Copyright © 2017 RbBtSn0w. All rights reserved.
@@ -8,11 +8,11 @@
 
 #import <XCTest/XCTest.h>
 
-@interface SWMoabCacheExampleTests : XCTestCase
+@interface RBSMoabCacheExampleTests : XCTestCase
 
 @end
 
-@implementation SWMoabCacheExampleTests
+@implementation RBSMoabCacheExampleTests
 
 - (void)setUp {
     [super setUp];

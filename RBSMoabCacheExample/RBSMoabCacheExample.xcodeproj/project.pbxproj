@@ -16,7 +16,7 @@
 		B16C2C6D1EA225B800C5AB62 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B16C2C6B1EA225B800C5AB62 /* LaunchScreen.storyboard */; };
 		B16C2C781EA225B800C5AB62 /* SWMoabCacheExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B16C2C771EA225B800C5AB62 /* SWMoabCacheExampleTests.m */; };
 		B16C2C831EA225B800C5AB62 /* SWMoabCacheExampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B16C2C821EA225B800C5AB62 /* SWMoabCacheExampleUITests.m */; };
-		B16C2C921EA225CF00C5AB62 /* SWMoabCache.m in Sources */ = {isa = PBXBuildFile; fileRef = B16C2C911EA225CF00C5AB62 /* SWMoabCache.m */; };
+		B19251881F41AA6B0034C87E /* RBSMoabCache.m in Sources */ = {isa = PBXBuildFile; fileRef = B19251871F41AA6B0034C87E /* RBSMoabCache.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B16C2C571EA225B800C5AB62 /* SWMoabCacheExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SWMoabCacheExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B16C2C571EA225B800C5AB62 /* RBSMoabCacheExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RBSMoabCacheExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B16C2C5B1EA225B800C5AB62 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B16C2C5D1EA225B800C5AB62 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B16C2C5E1EA225B800C5AB62 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -48,14 +48,14 @@
 		B16C2C691EA225B800C5AB62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B16C2C6C1EA225B800C5AB62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B16C2C6E1EA225B800C5AB62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B16C2C731EA225B800C5AB62 /* SWMoabCacheExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SWMoabCacheExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B16C2C731EA225B800C5AB62 /* RBSMoabCacheExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RBSMoabCacheExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B16C2C771EA225B800C5AB62 /* SWMoabCacheExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SWMoabCacheExampleTests.m; sourceTree = "<group>"; };
 		B16C2C791EA225B800C5AB62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B16C2C7E1EA225B800C5AB62 /* SWMoabCacheExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SWMoabCacheExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B16C2C7E1EA225B800C5AB62 /* RBSMoabCacheExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RBSMoabCacheExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B16C2C821EA225B800C5AB62 /* SWMoabCacheExampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SWMoabCacheExampleUITests.m; sourceTree = "<group>"; };
 		B16C2C841EA225B800C5AB62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B16C2C901EA225CF00C5AB62 /* SWMoabCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWMoabCache.h; path = ../../SWMoabCache/SWMoabCache.h; sourceTree = "<group>"; };
-		B16C2C911EA225CF00C5AB62 /* SWMoabCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWMoabCache.m; path = ../../SWMoabCache/SWMoabCache.m; sourceTree = "<group>"; };
+		B19251861F41AA6B0034C87E /* RBSMoabCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RBSMoabCache.h; path = ../../RBSMoabCache/RBSMoabCache.h; sourceTree = "<group>"; };
+		B19251871F41AA6B0034C87E /* RBSMoabCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RBSMoabCache.m; path = ../../RBSMoabCache/RBSMoabCache.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,9 +96,9 @@
 		B16C2C581EA225B800C5AB62 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B16C2C571EA225B800C5AB62 /* SWMoabCacheExample.app */,
-				B16C2C731EA225B800C5AB62 /* SWMoabCacheExampleTests.xctest */,
-				B16C2C7E1EA225B800C5AB62 /* SWMoabCacheExampleUITests.xctest */,
+				B16C2C571EA225B800C5AB62 /* RBSMoabCacheExample.app */,
+				B16C2C731EA225B800C5AB62 /* RBSMoabCacheExampleTests.xctest */,
+				B16C2C7E1EA225B800C5AB62 /* RBSMoabCacheExampleUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -106,8 +106,8 @@
 		B16C2C591EA225B800C5AB62 /* SWMoabCacheExample */ = {
 			isa = PBXGroup;
 			children = (
-				B16C2C901EA225CF00C5AB62 /* SWMoabCache.h */,
-				B16C2C911EA225CF00C5AB62 /* SWMoabCache.m */,
+				B19251861F41AA6B0034C87E /* RBSMoabCache.h */,
+				B19251871F41AA6B0034C87E /* RBSMoabCache.m */,
 				B16C2C5D1EA225B800C5AB62 /* AppDelegate.h */,
 				B16C2C5E1EA225B800C5AB62 /* AppDelegate.m */,
 				B16C2C601EA225B800C5AB62 /* ViewController.h */,
@@ -151,9 +151,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B16C2C561EA225B800C5AB62 /* SWMoabCacheExample */ = {
+		B16C2C561EA225B800C5AB62 /* RBSMoabCacheExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B16C2C871EA225B800C5AB62 /* Build configuration list for PBXNativeTarget "SWMoabCacheExample" */;
+			buildConfigurationList = B16C2C871EA225B800C5AB62 /* Build configuration list for PBXNativeTarget "RBSMoabCacheExample" */;
 			buildPhases = (
 				B16C2C531EA225B800C5AB62 /* Sources */,
 				B16C2C541EA225B800C5AB62 /* Frameworks */,
@@ -163,14 +163,14 @@
 			);
 			dependencies = (
 			);
-			name = SWMoabCacheExample;
+			name = RBSMoabCacheExample;
 			productName = SWMoabCacheExample;
-			productReference = B16C2C571EA225B800C5AB62 /* SWMoabCacheExample.app */;
+			productReference = B16C2C571EA225B800C5AB62 /* RBSMoabCacheExample.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B16C2C721EA225B800C5AB62 /* SWMoabCacheExampleTests */ = {
+		B16C2C721EA225B800C5AB62 /* RBSMoabCacheExampleTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B16C2C8A1EA225B800C5AB62 /* Build configuration list for PBXNativeTarget "SWMoabCacheExampleTests" */;
+			buildConfigurationList = B16C2C8A1EA225B800C5AB62 /* Build configuration list for PBXNativeTarget "RBSMoabCacheExampleTests" */;
 			buildPhases = (
 				B16C2C6F1EA225B800C5AB62 /* Sources */,
 				B16C2C701EA225B800C5AB62 /* Frameworks */,
@@ -181,14 +181,14 @@
 			dependencies = (
 				B16C2C751EA225B800C5AB62 /* PBXTargetDependency */,
 			);
-			name = SWMoabCacheExampleTests;
+			name = RBSMoabCacheExampleTests;
 			productName = SWMoabCacheExampleTests;
-			productReference = B16C2C731EA225B800C5AB62 /* SWMoabCacheExampleTests.xctest */;
+			productReference = B16C2C731EA225B800C5AB62 /* RBSMoabCacheExampleTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		B16C2C7D1EA225B800C5AB62 /* SWMoabCacheExampleUITests */ = {
+		B16C2C7D1EA225B800C5AB62 /* RBSMoabCacheExampleUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B16C2C8D1EA225B800C5AB62 /* Build configuration list for PBXNativeTarget "SWMoabCacheExampleUITests" */;
+			buildConfigurationList = B16C2C8D1EA225B800C5AB62 /* Build configuration list for PBXNativeTarget "RBSMoabCacheExampleUITests" */;
 			buildPhases = (
 				B16C2C7A1EA225B800C5AB62 /* Sources */,
 				B16C2C7B1EA225B800C5AB62 /* Frameworks */,
@@ -199,9 +199,9 @@
 			dependencies = (
 				B16C2C801EA225B800C5AB62 /* PBXTargetDependency */,
 			);
-			name = SWMoabCacheExampleUITests;
+			name = RBSMoabCacheExampleUITests;
 			productName = SWMoabCacheExampleUITests;
-			productReference = B16C2C7E1EA225B800C5AB62 /* SWMoabCacheExampleUITests.xctest */;
+			productReference = B16C2C7E1EA225B800C5AB62 /* RBSMoabCacheExampleUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -229,7 +229,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B16C2C521EA225B800C5AB62 /* Build configuration list for PBXProject "SWMoabCacheExample" */;
+			buildConfigurationList = B16C2C521EA225B800C5AB62 /* Build configuration list for PBXProject "RBSMoabCacheExample" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -242,9 +242,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B16C2C561EA225B800C5AB62 /* SWMoabCacheExample */,
-				B16C2C721EA225B800C5AB62 /* SWMoabCacheExampleTests */,
-				B16C2C7D1EA225B800C5AB62 /* SWMoabCacheExampleUITests */,
+				B16C2C561EA225B800C5AB62 /* RBSMoabCacheExample */,
+				B16C2C721EA225B800C5AB62 /* RBSMoabCacheExampleTests */,
+				B16C2C7D1EA225B800C5AB62 /* RBSMoabCacheExampleUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -284,7 +284,7 @@
 				B16C2C681EA225B800C5AB62 /* SWMoabCacheExample.xcdatamodeld in Sources */,
 				B16C2C621EA225B800C5AB62 /* ViewController.m in Sources */,
 				B16C2C5F1EA225B800C5AB62 /* AppDelegate.m in Sources */,
-				B16C2C921EA225CF00C5AB62 /* SWMoabCache.m in Sources */,
+				B19251881F41AA6B0034C87E /* RBSMoabCache.m in Sources */,
 				B16C2C5C1EA225B800C5AB62 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -310,12 +310,12 @@
 /* Begin PBXTargetDependency section */
 		B16C2C751EA225B800C5AB62 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B16C2C561EA225B800C5AB62 /* SWMoabCacheExample */;
+			target = B16C2C561EA225B800C5AB62 /* RBSMoabCacheExample */;
 			targetProxy = B16C2C741EA225B800C5AB62 /* PBXContainerItemProxy */;
 		};
 		B16C2C801EA225B800C5AB62 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B16C2C561EA225B800C5AB62 /* SWMoabCacheExample */;
+			target = B16C2C561EA225B800C5AB62 /* RBSMoabCacheExample */;
 			targetProxy = B16C2C7F1EA225B800C5AB62 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -464,7 +464,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rbbtsn0w.SWMoabCacheExampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SWMoabCacheExample.app/SWMoabCacheExample";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RBSMoabCacheExample.app/RBSMoabCacheExample";
 			};
 			name = Debug;
 		};
@@ -476,7 +476,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rbbtsn0w.SWMoabCacheExampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SWMoabCacheExample.app/SWMoabCacheExample";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RBSMoabCacheExample.app/RBSMoabCacheExample";
 			};
 			name = Release;
 		};
@@ -505,7 +505,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B16C2C521EA225B800C5AB62 /* Build configuration list for PBXProject "SWMoabCacheExample" */ = {
+		B16C2C521EA225B800C5AB62 /* Build configuration list for PBXProject "RBSMoabCacheExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B16C2C851EA225B800C5AB62 /* Debug */,
@@ -514,29 +514,32 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B16C2C871EA225B800C5AB62 /* Build configuration list for PBXNativeTarget "SWMoabCacheExample" */ = {
+		B16C2C871EA225B800C5AB62 /* Build configuration list for PBXNativeTarget "RBSMoabCacheExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B16C2C881EA225B800C5AB62 /* Debug */,
 				B16C2C891EA225B800C5AB62 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		B16C2C8A1EA225B800C5AB62 /* Build configuration list for PBXNativeTarget "SWMoabCacheExampleTests" */ = {
+		B16C2C8A1EA225B800C5AB62 /* Build configuration list for PBXNativeTarget "RBSMoabCacheExampleTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B16C2C8B1EA225B800C5AB62 /* Debug */,
 				B16C2C8C1EA225B800C5AB62 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		B16C2C8D1EA225B800C5AB62 /* Build configuration list for PBXNativeTarget "SWMoabCacheExampleUITests" */ = {
+		B16C2C8D1EA225B800C5AB62 /* Build configuration list for PBXNativeTarget "RBSMoabCacheExampleUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B16C2C8E1EA225B800C5AB62 /* Debug */,
 				B16C2C8F1EA225B800C5AB62 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
